@@ -6,7 +6,8 @@ import PrivateRoutes from "./PrivateRoutes";
 import PublicRoutes from "./PublicRoutes";
 import Estudiantes from "../views/estudiantes/Estudiantes"; 
 import Profesores from "../views/profesores/Profesores"; 
-import Admin from "../views/admin/Admin"; 
+import Publicaciones from "../views/admin/publicaciones";
+import Admin from "../views/admin/admin"; 
 
 const AppRouter = () => {
   return (
@@ -23,8 +24,7 @@ const AppRouter = () => {
           <Route path="/estudiantes" element={<Estudiantes />} />
           <Route path="/profesores" element={<Profesores />} />
           <Route path="/admin" element={<Admin />} />
-      
-      
+          <Route path="/publicaciones" element={<Publicaciones />} />
         </Route>
       </Routes>
     </BrowserRouter>

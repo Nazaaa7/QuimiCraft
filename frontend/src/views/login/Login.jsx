@@ -4,7 +4,26 @@ import { FloatingLabel, Form } from "react-bootstrap";
 import { UserContext } from "../../context/UserContext";
 import { Link, useNavigate } from "react-router-dom"; 
 import "./login.css";
+import ReactDOM from 'react-dom';
+// import GoogleLogin from 'react-google-login';
+// // or
+// import { GoogleLogin } from 'react-google-login';
 
+
+// const responseGoogle = (response) => {
+//   console.log(response);
+// }
+
+// ReactDOM.render(
+//   <GoogleLogin
+//     clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com"
+//     buttonText="Login"
+//     onSuccess={responseGoogle}
+//     onFailure={responseGoogle}
+//     cookiePolicy={'single_host_origin'}
+//   />,
+//   document.getElementById('googleButton')
+// );
 const Login = () => {
   const navigate = useNavigate();
   const { stateDispatch } = useContext(UserContext);

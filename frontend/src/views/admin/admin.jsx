@@ -2,9 +2,9 @@
 import React, { useContext } from 'react';
 import Navbar from './navbar';
 import Banner from './banner';
-import Categories from './categories';
 import { UserContext } from '../../context/UserContext'; // Importa el contexto
 import { userType } from '../../context/userTypes'; // Importa los tipos de acción
+import Publicaciones from './publicaciones';
 
 function Admin() {
   const { stateDispatch } = useContext(UserContext); // Accede al dispatch
@@ -27,8 +27,7 @@ function Admin() {
     <div className="App">
       <Navbar />
       <Banner />
-      <Categories />
-      <button onClick={logOut}>Cerrar Sesión (ad)</button>
+      <Publicaciones/>
     </div>
   );
 }
